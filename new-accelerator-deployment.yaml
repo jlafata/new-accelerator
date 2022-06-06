@@ -5,6 +5,6 @@ metadata:
   namespace: accelerator-system
 spec:
   git:
-    url: https://github.com/simple-starters/new-accelerator
+    url: https://github.com/jlafata/new-accelerator
     ref:
       branch: main
