@@ -25,7 +25,18 @@ accelerator:
       inputType: text
       required: true
       defaultValue: main
-
+engine:
+  merge:
+    - include: [ "**" ]
+      chain:
+        - type: ReplaceText
+          substitutions:
+            - text: "acc-name"
+              with: "#acceleratorName" 
+            - text: acc-git-url
+              with: "#gitUrl"
+            - text: acc-git-branch
+              with: "#gitBranch"
 #engine:
 #  resources:
 #    - name: specific-file
